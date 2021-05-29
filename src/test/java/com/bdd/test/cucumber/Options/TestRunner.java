@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = { "pretty", "json:target/cucumber.json"}, features = "src/test/java/com/bdd/test/features", glue = {
-				"com.bdd.test.stepDefinitions" })
+				"com.bdd.test.stepDefinitions" },tags = "@EndToEndTest")
 public class TestRunner {
 
 }

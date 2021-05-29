@@ -63,7 +63,7 @@ public class StepDefinitions extends Utils {
 		} else
 
 		{
-			System.out.println("Username is null or Username doesn't exist");
+			System.out.println("Username is empty or Username doesn't exist");
 			assertEquals(response.getStatusCode(), 404);
 		}
 
