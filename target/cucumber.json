@@ -1,0 +1,313 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-29T19:16:59.675Z",
+        "line": 16,
+        "name": "Search for specific username in json placeholder api",
+        "description": "",
+        "id": "this-feature-is-about-user-blogs-posts-api-operations;search-for-specific-username-in-json-placeholder-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1477000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user calls \"GetUserNameAPI\" with \"GET\" http request with \"Delphine\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GetUserNameAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"Delphine\"",
+                  "offset": 57
+                }
+              ],
+              "location": "com.bdd.test.stepDefinitions.StepDefinitions.user_calls_with_http_request_with(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the api call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "com.bdd.test.stepDefinitions.StepDefinitions.the_api_call_got_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 149000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user calls \"GetPostsAPI\" with \"GET\" http request to get post ids",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GetPostsAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.bdd.test.stepDefinitions.StepDefinitions.user_calls_with_http_request_to_get_post_ids(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the api call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "com.bdd.test.stepDefinitions.StepDefinitions.the_api_call_got_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 903000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user calls \"GetCommentsAPI\" with \"GET\" http request to get comments",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GetCommentsAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.bdd.test.stepDefinitions.StepDefinitions.user_calls_with_http_request_to_get_comments(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the api call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "com.bdd.test.stepDefinitions.StepDefinitions.the_api_call_got_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "validate that email id of each post are in proper format",
+            "match": {
+              "location": "com.bdd.test.stepDefinitions.StepDefinitions.validate_that_email_id_of_each_post_are_in_proper_format()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EndToEndTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-29T19:17:02.262Z",
+        "line": 17,
+        "name": "Search for specific username in json placeholder api",
+        "description": "",
+        "id": "this-feature-is-about-user-blogs-posts-api-operations;search-for-specific-username-in-json-placeholder-api;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 94000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user calls \"GetUserNameAPI\" with \"GET\" http request with \"Antonette\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GetUserNameAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"Antonette\"",
+                  "offset": 57
+                }
+              ],
+              "location": "com.bdd.test.stepDefinitions.StepDefinitions.user_calls_with_http_request_with(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the api call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "com.bdd.test.stepDefinitions.StepDefinitions.the_api_call_got_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 83000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user calls \"GetPostsAPI\" with \"GET\" http request to get post ids",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GetPostsAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.bdd.test.stepDefinitions.StepDefinitions.user_calls_with_http_request_to_get_post_ids(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the api call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "com.bdd.test.stepDefinitions.StepDefinitions.the_api_call_got_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1088000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user calls \"GetCommentsAPI\" with \"GET\" http request to get comments",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GetCommentsAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.bdd.test.stepDefinitions.StepDefinitions.user_calls_with_http_request_to_get_comments(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the api call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "com.bdd.test.stepDefinitions.StepDefinitions.the_api_call_got_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "validate that email id of each post are in proper format",
+            "match": {
+              "location": "com.bdd.test.stepDefinitions.StepDefinitions.validate_that_email_id_of_each_post_are_in_proper_format()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EndToEndTest"
+          }
+        ]
+      }
+    ],
+    "name": "This feature is about user blogs posts API operations",
+    "description": "",
+    "id": "this-feature-is-about-user-blogs-posts-api-operations",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/bdd/test/features/userBlogs.feature",
+    "tags": []
+  }
+]

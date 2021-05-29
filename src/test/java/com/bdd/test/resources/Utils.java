@@ -33,7 +33,6 @@ public class Utils {
 	public Response getAPIResponse(RequestSpecification requestSpec, String apiMethod, String apiResource) {
 		Response response = null;
 		if (apiMethod.equalsIgnoreCase("GET"))
-//			System.out.println(requestSpec.log().all());
 			response = requestSpec.when().get(apiResource);
 		return response;
 	}

@@ -1,18 +1,17 @@
 package com.bdd.test.resources;
 
-import com.bdd.test.pojo.AddUserInformation;
+import com.bdd.test.pojo.UserInformation;
 import com.bdd.test.pojo.UserPosts;
 
 import io.restassured.response.Response;
 
 public class TestDataBuild extends Utils {
 
-	public AddUserInformation addUserInformation(Response response) {
-		AddUserInformation addUserInfo = new AddUserInformation();
-		String id = getJsonPath(response, "id").replaceAll("\\[", "").replaceAll("\\]", "");
-		addUserInfo.setId(Integer.parseInt(id));
-		addUserInfo.setUserName(getJsonPath(response, "username"));
-		addUserInfo.setEmailId(getJsonPath(response, "email"));
+	public UserInformation addUserInformation(Response response) {
+		UserInformation addUserInfo = new UserInformation();
+		addUserInfo.setId(Integer.parseInt(getJsonPath(response, "id")));
+		addUserInfo.setName(getJsonPath(response, "username"));
+		addUserInfo.setEmail(getJsonPath(response, "email"));
 		return addUserInfo;
 	}
 

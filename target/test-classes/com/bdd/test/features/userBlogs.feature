@@ -13,4 +13,5 @@ Feature: This feature is about user blogs posts API operations
 
     Examples: 
       | userName |
-      | Delphine |
+      |Delphine|
+      |Antonette|
