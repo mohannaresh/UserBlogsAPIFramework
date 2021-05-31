@@ -5,3 +5,7 @@ target/
 
 #eclipse dependencies
 .settings/
+
+#Intellij IDE dependencies
+.idea/
+

@@ -13,7 +13,6 @@ import com.bdd.test.pojo.UserInformation;
 import com.bdd.test.pojo.Comments;
 import com.bdd.test.pojo.UserPosts;
 import com.bdd.test.resources.APIResources;
-import com.bdd.test.resources.TestDataBuild;
 import com.bdd.test.resources.Utils;
 
 import io.cucumber.java.en.Given;
@@ -29,7 +28,6 @@ public class StepDefinitions extends Utils {
 	RequestSpecification requestSpec;
 	ResponseSpecification responseSpec;
 	Response response;
-	TestDataBuild testData = new TestDataBuild();
 	List<UserInformation> userInformation;
 	List<UserPosts> userPosts;
 	List<Comments> comments;
@@ -70,7 +68,7 @@ public class StepDefinitions extends Utils {
 	}
 
 	@When("user calls {string} with {string} http request to get comments")
-	public void user_calls_with_http_request_to_get_comments(String resource, String apiMethod) throws IOException {
+	public void user_calls_with_http_request_to_get_comments(String resource, String apiMethod) {
 		APIResources resourceAPI = APIResources.valueOf(resource);
 
 		Stream<UserPosts> userPostsStream = userPosts.stream();
@@ -90,8 +88,8 @@ public class StepDefinitions extends Utils {
 	}
 
 	@Then("the api call got success with status code {int}")
-	public void the_api_call_got_success_with_status_code(Integer int1) {
-		assertEquals(response.getStatusCode(), 200);
+	public void the_api_call_got_success_with_status_code(int statusCode) {
+		assertEquals(response.getStatusCode(), statusCode);
 	}
 
 	@Then("validate that email id of each post are in proper format")
