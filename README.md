@@ -21,6 +21,9 @@
   5. Right click on TestRunner.java
   6. RunAs ---> JUnitTest
 
+**Cucumber TestReports**
+After running the testcases we can watch the test reports in the "https://reports.cucumber.io/reports/{id}" link. Full link will be shown in the IDE console.
+
 
 
 
