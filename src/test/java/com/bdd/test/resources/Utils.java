@@ -19,7 +19,18 @@ public class Utils {
 	public static RequestSpecification req;
 	PrintStream log = null;
 
-	public RequestSpecification requestSpecification(String prameterName, Object parameterValue) throws IOException {
+	public RequestSpecification requestSpecification(String prameterName, String parameterValue) throws IOException {
+		if (log == null) {
+			log = new PrintStream(new FileOutputStream("logging.txt"));
+		}
+
+		req = new RequestSpecBuilder().setBaseUri(getGlobalValue("baseUrl")).addQueryParam(prameterName, parameterValue)
+				.addFilter(RequestLoggingFilter.logRequestTo(log)).addFilter(ResponseLoggingFilter.logResponseTo(log))
+				.setContentType(ContentType.JSON).build();
+		return req;
+	}
+
+	public RequestSpecification requestSpecification(String prameterName, int parameterValue) throws IOException {
 		if (log == null) {
 			log = new PrintStream(new FileOutputStream("logging.txt"));
 		}
