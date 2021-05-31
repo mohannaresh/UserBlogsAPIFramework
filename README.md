@@ -15,10 +15,11 @@
 
 **How to run the project: **
   1. Open the project in any one of the IDE
-  2. Go to src/test/java/com/bdd/test/cucumber/Options/
-  3. Check tags = "@EndToEndTest" in TestRunner.java file is matching with userBlogs.feature file Scenario tag
-  4. Right click on TestRunner.java
-  5. RunAs ---> JUnitTest
+  2. Select "Maven build" ---> type "clean install" in Goals textfield
+  3. Go to src/test/java/com/bdd/test/cucumber/Options/
+  4. Check tags = "@EndToEndTest" in TestRunner.java file is matching with userBlogs.feature file Scenario tag
+  5. Right click on TestRunner.java
+  6. RunAs ---> JUnitTest
 
 
 
