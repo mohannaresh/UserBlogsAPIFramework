@@ -3,17 +3,17 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-05-29T19:16:59.675Z",
+        "start_timestamp": "2021-05-31T16:09:22.869Z",
         "line": 16,
-        "name": "Search for specific username in json placeholder api",
+        "name": "Validate displayed email id  is proper format present in the comment section of each blog post created by a specific user",
         "description": "",
-        "id": "this-feature-is-about-user-blogs-posts-api-operations;search-for-specific-username-in-json-placeholder-api;;2",
+        "id": "this-feature-is-about-user-blogs-posts-api-operations;validate-displayed-email-id--is-proper-format-present-in-the-comment-section-of-each-blog-post-created-by-a-specific-user;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1477000000,
+              "duration": 1569000000,
               "status": "passed"
             },
             "line": 5,
@@ -57,7 +57,7 @@
           },
           {
             "result": {
-              "duration": 149000000,
+              "duration": 147000000,
               "status": "passed"
             },
             "line": 7,
@@ -96,7 +96,7 @@
           },
           {
             "result": {
-              "duration": 903000000,
+              "duration": 837000000,
               "status": "passed"
             },
             "line": 9,
@@ -135,7 +135,7 @@
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 11,
@@ -153,17 +153,17 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-29T19:17:02.262Z",
+        "start_timestamp": "2021-05-31T16:09:25.478Z",
         "line": 17,
-        "name": "Search for specific username in json placeholder api",
+        "name": "Validate displayed email id  is proper format present in the comment section of each blog post created by a specific user",
         "description": "",
-        "id": "this-feature-is-about-user-blogs-posts-api-operations;search-for-specific-username-in-json-placeholder-api;;3",
+        "id": "this-feature-is-about-user-blogs-posts-api-operations;validate-displayed-email-id--is-proper-format-present-in-the-comment-section-of-each-blog-post-created-by-a-specific-user;;3",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 94000000,
+              "duration": 81000000,
               "status": "passed"
             },
             "line": 5,
@@ -189,6 +189,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 6,
@@ -206,7 +207,7 @@
           },
           {
             "result": {
-              "duration": 83000000,
+              "duration": 86000000,
               "status": "passed"
             },
             "line": 7,
@@ -245,7 +246,7 @@
           },
           {
             "result": {
-              "duration": 1088000000,
+              "duration": 785000000,
               "status": "passed"
             },
             "line": 9,
@@ -267,7 +268,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 10,
