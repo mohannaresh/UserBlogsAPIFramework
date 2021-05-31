@@ -2,3 +2,6 @@
 
 # target directory
 target/
+
+#eclipse dependencies
+.settings/
